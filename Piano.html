@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	 <head>
+        <style>
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #F18C0C;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+        </style>
+    </head>
+    <body><!-- Top Bar -->
+
+                    <ul>
+                    <li><a class="active" href="Piano.html">Home</a></li>
+                   
+                    <li><a href="HowToUse.html">How To Use</a></li>
+                    </ul>
+
+    </body>
+
+            <title> Sound Masters Piano </title>
+        </head>
+
+<body background  ="greyBackground.jpg">
+        <center>
+
+                <h1 style="background-color:Orange;" id="para1">
+                        <font size="14">Sound Masters Piano</font>
+                        <p id="demo"></p>
+                </h1>
+ 
+
+        </center>
+
+
+        <center>
+<!-- White keys are created here -->
+    <div id="white">
+                <div class="whiteKey" id="11w" onclick="load_noteC1()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="12w" onclick="load_noteD1()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="13w" onclick="load_noteE1()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="14w" onclick="load_noteF1()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="15w" onclick="load_noteG1()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="16w" onclick="load_noteA1()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="17w" onclick="load_noteB1()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="18w" onclick="load_noteC2()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="19w" onclick="load_noteD2()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="20w" onclick="load_noteE2()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="21w" onclick="load_noteF2()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="22w" onclick="load_noteG2()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="23w" onclick="load_noteA2()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="24w" onclick="load_noteB2()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="25w" onclick="load_noteC3()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="26w" onclick="load_noteD3()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="27w" onclick="load_noteE3()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="28w" onclick="load_noteF3()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="29w" onclick="load_noteG3()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="30w" onclick="load_noteA3()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="31w" onclick="load_noteB3()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="32w" onclick="load_noteC4()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="33w" onclick="load_noteD4()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="34w" onclick="load_noteE4()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="35w" onclick="load_noteF4()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="36w" onclick="load_noteG4()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="37w" onclick="load_noteA4()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="38w" onclick="load_noteB4()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="39w" onclick="load_noteC5()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="40w" onclick="load_noteD5()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="41w" onclick="load_noteE5()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="42w" onclick="load_noteF5()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="43w" onclick="load_noteG5()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="44w" onclick="load_noteA5()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="45w" onclick="load_noteB5()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+                <div class="whiteKey" id="46w" onclick="load_noteC6()" style="background-image: linear-gradient(white 100%, rgb(251, 251, 251) 92%, rgb(208, 207, 207) 91%, white 97%);"></div>
+    </div>
+
+    <!-- Black Keys created here -->
+    <div id="black">
+
+            <div class="blackKey" id="11b" onclick="load_noteCS1()" style="left:-8px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="12b" onclick="load_noteDS1()" style="left: 6px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="13b" onclick="load_noteFS1()" style="left: 52px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="14b" onclick="load_noteGS1()" style="left: 66px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <!--Blck below not aligned-->
+            <div class="blackKey" id="15b" onclick="load_noteAS1()" style="left: 80px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="16b" onclick="load_noteCS2()" style="left: 129px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="17b" onclick="load_noteDS2()" style="left: 143px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="18b" onclick="load_noteFS2()" style="left: 188px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="19b" onclick="load_noteGS2()" style="left: 203px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+
+            <div class="blackKey" id="20b" onclick="load_noteAS2()" style="left: 216px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="21b" onclick="load_noteCS3()" style="left: 263px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="22b" onclick="load_noteDS3()" style="left: 277px;background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="23b" onclick="load_noteFS3()" style="left: 325px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="24b" onclick="load_noteGS3()" style="left: 337px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="25b" onclick="load_noteAS3()" style="left: 346px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="26b" onclick="load_noteCS4()" style="left: 396px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="27b" onclick="load_noteDS4()" style="left: 410px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="28b" onclick="load_noteFS4()" style="left: 459px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="29b" onclick="load_noteGS4()" style="left: 473px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="30b" onclick="load_noteAS4()" style="left: 486px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="31b" onclick="load_noteCS5()" style="left: 534px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="32b" onclick="load_noteDS5()" style="left: 548px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="33b" onclick="load_noteFS5()" style="left: 595px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="34b" onclick="load_noteGS5()" style="left: 608px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+            <div class="blackKey" id="35b" onclick="load_noteAS5()" style="left: 622px; background-image: linear-gradient(black 10%, rgb(86, 86, 86) 85%, black 90%);"></div>
+    </div>
+
+
+    <style>
+            
+            .Key{
+                position: absolute;
+                top: 950px;
+                left: 100px;
+            }
+
+            .Octave{
+            position: absolute;
+            top: 950px;
+            left: 175px;
+            }
+
+            #wrapper{
+                background-position: 50% 0px;
+                bottom: 635px;
+                right: 395px;
+                width: 984px;
+                margin: 0px auto 0 auto;
+                text-align: center;
+                position: relative;
+            }
+		/* CSS for letters on the white keys*/
+            .one {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 265px;
+            }
+            .two {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 300px;
+            }
+            .three {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 335px;
+            }
+            .four {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 370px;
+            }
+            .five {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 405px;
+            }
+            .six {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 440px;
+            }
+            .seven {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 475px;
+            }
+            .eight {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 510px;
+            }
+            .nine {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 545px;
+            }
+            .ten {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 580px;
+            }
+            .eleven {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 615px;
+            }
+            .twelve {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 650px;
+            }
+            .thirteen {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 685px;
+            }
+            .fourteen {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 720px;
+            }
+            .fifteen {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 755px;
+            }
+            .sixteen {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 790px;
+            }
+            .seventeen {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 825px;
+            }
+            .eighteen {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 860px;
+            }
+            .nineteen {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 895px;
+            }
+            .twenty {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 930px;
+            }
+            .twentyone {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 965px;
+            }
+            .twentytwo {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1000px;
+            }
+            .twentythree {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1035px;
+            }
+            .twentyfour {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1070px;
+            }
+            .twentyfive {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1105px;
+            }
+            .twentysix {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1140px;
+            }
+            .twentyseven {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1175px;
+            }
+            .twentyeight {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1210px;
+            }
+            .twentynine {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1245px;
+            }
+            .thirty {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1280px;
+            }
+            .thirtyone {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1315px;
+            }
+            .thirtytwo {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1350px;
+            }
+            .thirtythree{
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1385px;
+            }
+            .thirtyfour {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1420px;
+            }
+            .thirtyfive {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1455px;
+            }
+            .thirtysix {
+                position: absolute;
+                pointer-events: none;
+                top: 600px;
+                left: 1490px;
+            }
+	        .oneb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 352px;
+            }
+		/* css forletters on black keys*/
+            .twob {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 388px;
+            }
+            .threeb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 457px;
+            }
+            .fourb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 492px;
+            }
+            .fiveb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 528px;
+            }
+            .sixb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 599px;
+            }
+            .sevenb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 635px;
+            }
+            .eightb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 703px;
+            }
+            .nineb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 739px;
+            }
+            .tenb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 774px;
+            }
+            .elevenb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 843px;
+            }
+            .twelveb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 879px;
+            }
+            .thirteenb {
+                position: absolute;
+                pointer-events: none;
+                top:455px;
+                left: 950px;
+            }
+            .fourteenb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 983px;
+            }
+            .fifteenb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1014px;
+            }
+            .sixteenb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1086px;
+            }
+            .seventeenb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1122px;
+            }
+            .eighteenb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1194px;
+            }
+            .nineteenb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1229px;
+            }
+            .twentyb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1264px;
+            }
+            .twentyoneb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1335px;
+            }
+            .twentytwob {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1370px;
+            }
+            .twentythreeb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1440px;
+            }
+            .twentyfourb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1474px;
+            }
+            .twentyfiveb {
+                position: absolute;
+                pointer-events: none;
+                top: 455px;
+                left: 1510px;
+            }
+    </style>
+	<!-- Letter on white Keys -->
+    <body>
+            <div id="wrapper">
+            <div class="one">C</div>
+            <div class="two">D</div>
+            <div class="three">E</div>
+            <div class="four">F</div>
+            <div class="five">G</div>
+            <div class="six">A</div>
+            <div class="seven">B</div>
+            <div class="eight">C</div>
+            <div class="nine">D</div>
+            <div class="ten">E</div>
+            <div class="eleven">F</div>
+            <div class="twelve">G</div>
+            <div class="thirteen">A</div>
+            <div class="fourteen">B</div>
+            <div class="fifteen">C</div>
+            <div class="sixteen">D</div>
+            <div class="seventeen">E</div>
+            <div class="eighteen">F</div>
+            <div class="nineteen">G</div>
+            <div class="twenty">A</div>
+            <div class="twentyone">B</div>
+            <div class="twentytwo">C</div>
+            <div class="twentythree">D</div>
+            <div class="twentyfour">E</div>
+            <div class="twentyfive">F</div>
+            <div class="twentysix">G</div>
+            <div class="twentyseven">A</div>
+            <div class="twentyeight">B</div>
+            <div class="twentynine">C</div>
+            <div class="thirty">D</div>
+            <div class="thirtyone">E</div>
+            <div class="thirtytwo">F</div>
+            <div class="thirtythree">G</div>
+            <div class="thirtyfour">A</div>
+            <div class="thirtyfive">B</div>
+            <div class="thirtysix">C</div>
+            </div>
+    </body>
+	<!-- Letters on black keys -->
+    <div class="oneb"><font color="white">C#</font></div>
+    <div class="twob"><font color="white">D#</font></div>
+    <div class="threeb"><font color="white">F#</font></div>
+    <div class="fourb"><font color="white">G#</font></div>
+    <div class="fiveb"><font color="white">A#</font></div>
+    <div class="sixb"><font color="white">C#</font></div>
+    <div class="sevenb"><font color="white">D#</font></div>
+    <div class="eightb"><font color="white">F#</font></div>
+    <div class="nineb"><font color="white">G#</font></div>
+    <div class="tenb"><font color="white">A#</font></div>
+    <div class="elevenb"><font color="white">C#</font></div>
+    <div class="twelveb"><font color="white">D#</font></div>
+    <div class="thirteenb"><font color="white">F#</font></div>
+    <div class="fourteenb"><font color="white">G#</font></div>
+    <div class="fifteenb"><font color="white">A#</font></div>
+    <div class="sixteenb"><font color="white">C#</font></div>
+    <div class="seventeenb"><font color="white">D#</font></div>
+    <div class="eighteenb"><font color="white">F#</font></div>
+    <div class="nineteenb"><font color="white">G#</font></div>
+    <div class="twentyb"><font color="white">A#</font></div>
+    <div class="twentyoneb"><font color="white">C#</font></div>
+    <div class="twentytwob"><font color="white">D#</font></div>
+    <div class="twentythreeb"><font color="white">F#</font></div>
+    <div class="twentyfourb"><font color="white">G#</font></div>
+    <div class="twentyfiveb"><font color="white">A#</font></div>
+
+    <!--Lower whitish half of the page-->
+    <div   id="para2">
+
+                    <form class = "dots" align = "left">
+                            
+                            <h3>Tunings</h3>
+                            <label class ="container">Standard
+                            <input type="radio" id = "stanRadio" checked = "standard" name="radio" value="standard"> 
+    <span class ="checkmark"></span></label>
+                            <label class ="container">Just Intonation
+                            <input type="radio" name="radio" id="justRadio" value="just intonation"> <span class ="checkmark"></span></label>
+                            <label class ="container">Pythagorean
+                            <input type="radio" name="radio" id="pythRadio" value="pythagorean"> <span class ="checkmark"></span></label>
+                            <label class ="container">Custom
+                            <input type="radio" name="radio" id="custRadio" value="custom"> <span class ="checkmark"></span>
+                            </label>
+                            <p id="demo"></p>
+                    </form>
+
+            <center align ="right">
+            
+    </div>
+    <div id = "para3">
+
+        <button id = "setB" class="setButton" onclick="changeControl()">Modify</button>
+        <button id = "pianoB" class="pianoButton" onclick="setFrequencies()" disabled>Play</button>
+        <button id = "resetB" class="resetButton" onclick="resetFreq()">Reset</button>
+        <input  id = "setChordB" class="setChordButton" onclick="setChord()" value="Chord Mode" type="button"></input>
+        <button id = "playChordB" class="playChordButton" onclick="playChord()" disabled>Play Chord</button>
+	    <button id = "assistOn" class="assistOn" onclick="change()" >Key Assist Off</button>
+	
+	<!-- Boxes and their default values -->
+        <div id="Display" >
+                <form class="C3">
+                C: <input type="number" class="inputBold" id="cname" value=261.6256 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="Cs3">
+                C#: <input type="number" class="inputBold" id="cSname" value=277.1826 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="D3">
+                D: <input type="number" class="inputBold" id="dname" value=293.6648 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="Ds3">
+                D#: <input type="number" class="inputBold" id="dSname" value=311.1270 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="E3">
+                E: <input type="number" class="inputBold" id="ename" value=329.6276 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="F3">
+                F: <input type="number" class="inputBold" id="fname" value=349.2282 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="Fs3">
+                F#: <input type="number" class="inputBold" id="fSname" value=369.9944 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="G3">
+                G: <input type="number" class="inputBold" id="gname" value=391.9954 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="Gs3">
+                G#: <input type="number" class="inputBold" id="gSname" value=415.3047 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="A3">
+                A: <input type="number" class="inputBold" id="aname" value=440.0000 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="As3">
+                A#: <input type="number" class="inputBold" id="aSname" value=466.1638 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+                <form class="B3">
+                B: <input type="number" class="inputBold" id="bname" value=493.8833 style="width: 100px;font-size:12pt;font-weight: bold;" disabled="disabled">
+                </form>
+        </div>
+    </div>
+                <style>
+                    html, body {
+                        width: 1920px;
+                        height: 1200px;
+                        margin: 0;
+                        padding: 0;
+                                    
+                    }
+
+                    h1 {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    #para1 {
+                        padding-top: 50px;
+                        padding-right: 30px;
+                        padding-bottom: 50px;
+                        padding-left: 80px;
+                        color:black;
+                    }
+
+                    #para3 {
+                        width:1870px;
+                        height: 517px;
+                        padding: 25px;
+                        margin-top: 00px;
+                        margin-bottom:0px;
+                        background: rgba(255, 255, 255, 0.4);
+                    }
+
+                    #white {
+                        z-index: 0;
+                        padding-left: 20px;
+                        padding-right: 10px;
+                        width: 1273px;
+                        height: 383px;
+                        background-image: linear-gradient(#404040 -10px, #000 333px);
+                    }
+                    #black {
+                        position: relative;
+                        bottom: 377px;
+                        padding-left: 33px;
+                        width: 1235px;
+                    }
+                    .whiteKey,.blackKey {
+                        float: left;
+                        text-align: center;
+                    }
+                    .whiteKey {
+                        margin: 13% auto;
+                        margin-left: 2px;
+                        box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+                        width: 33px;
+                        height: 210px;
+
+                        border-radius: 2px 2px 2px 2px;
+                        background-image: linear-gradient(white 10%, #fbfbfb 92%, #d0cfcf 91%, white 97%);
+                        color: #000;
+                        font-weight: 700;
+                        -moz-border-radius: 2px 2px 5px 5px;
+                        -webkit-border-radius: 2px 2px 5px 5px;
+                    }
+                    .blackKey {
+                        position: relative;
+                        width: 22px;
+                        height: 136px;
+                        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+                        border-radius: 0px 0px 2px 2px;
+                        background-image: linear-gradient(black 10%, #565656 85%, black 90%);
+                        color: #fff;
+                        -moz-border-radius: 2px 2px 5px 5px;
+                        -webkit-border-radius: 2px 2px 5px 5px;
+                    }
+                    .blackKey:hover {
+                        background-image: linear-gradient(#313131 8%, #3a3a3a 85%, black 85%) !important;
+                    }
+                    .blackKey:active {
+                        background-image: linear-gradient(#4a4a4a 30%, #000 80%, #404040 92%, black 94%) !important;
+                    }
+                   
+                    .whiteKey:active {
+                        background-image: linear-gradient(white 10%, #b1b1b1 95%, #c0c0c0 92%, #b4b4b4 90%) !important;
+                    }
+                    .wActive{
+                        background-image: linear-gradient(white 10%, #b1b1b1 95%, #c0c0c0 92%, #b4b4b4 90%) !important;
+                    
+                    }
+		            .bActive{
+                        background-image: linear-gradient(#908f8f 30%, #000 80%, #404040 92%, black 94%) !important;
+                    }
+		    
+                    form.C3{
+                            position: absolute;
+                            left: 452px;
+                            top: 700px;
+                    }
+
+                    form.Cs3{
+                            position: absolute;
+                            left: 607px;
+                            top: 700px;
+                    }
+
+                    form.D3{
+                            position: absolute;
+                            left: 787px;
+                            top: 700px;
+                    }
+
+                    form.Ds3{
+                            position: absolute;
+                            left: 943px;
+                            top: 700px;
+                    }
+
+                    form.E3{
+                            position: absolute;
+                            left: 1127px;
+                            top: 700px;
+                    }
+
+                    form.F3{
+                            position: absolute;
+                            left: 1297px;
+                            top: 700px;
+                    }
+
+                    form.Fs3{
+                            position: absolute;
+                            left: 440px;
+                            top: 760px;
+                    }
+
+                    form.G3{
+                            position: absolute;
+                            left: 618px;
+                            top: 760px;
+                    }
+
+                    form.Gs3{
+                            position: absolute;
+                            left: 775px;
+                            top: 760px;
+                    }
+
+                    form.A3{
+                            position: absolute;
+                            left: 958px;
+                            top: 760px;
+                    }
+
+                    form.As3{
+                            position: absolute;
+                            left: 1114px;
+                            top: 760px;
+                    }
+
+                    form.B3{
+                            position: absolute;
+                            left: 1296px;
+                            top: 760px;
+                    }
+
+                    #Display{
+                            width:	100%;
+                            padding: 100px 0;
+                            margin-top: 200px;
+                            font: 20px/30px Georgia, serif; 
+                    }
+		    
+		    
+
+                    .setButton{
+                        position: absolute;
+                        width: 75px;
+                        height: 40px;
+                        left: 330px;
+                        top: 700px;
+                        font-size: 16px;
+                        background-color: Orange;
+                        border: 0;
+                        background-image: linear-gradient(to top left,
+                                                    rgba(0, 0, 0, .1),
+                                                    rgba(0, 0, 0, .1) 30%,
+                                                    rgba(0, 0, 0, 0));
+                        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                        border-radius: 15px;
+                    }
+                    .pianoButton{
+                        position: absolute;
+                        width: 75px;
+                        height: 40px;
+                        left: 330px;
+                        top: 750px;
+                        font-size: 16px;
+                        background-color: Orange;
+                        border: 0;
+                        background-image: linear-gradient(to top left,
+                                                    rgba(0, 0, 0, .1),
+                                                    rgba(0, 0, 0, .1) 30%,
+                                                    rgba(0, 0, 0, 0));
+                        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                        border-radius: 15px;
+                    }
+                    .resetButton{
+                        position: absolute;
+                        width: 75px;
+                        height: 40px;
+                        left: 330px;
+                        top: 800px;
+                        font-size: 16px;
+                        background-color: Orange;
+                        border: 0;
+                        background-image: linear-gradient(to top left,
+                                                    rgba(0, 0, 0, .1),
+                                                    rgba(0, 0, 0, .1) 30%,
+                                                    rgba(0, 0, 0, 0));
+                        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                        border-radius: 15px;
+                    }
+
+                    .setChordButton{
+                        position: absolute;
+                        width: 75px;
+                        height: 65px;
+                        left: 1514px;
+                        top: 700px;
+                        font-size: 16px;
+                        background-color: Orange;
+                        border: 0;
+                        background-image: linear-gradient(to top left,
+                                                    rgba(0, 0, 0, .1),
+                                                    rgba(0, 0, 0, .1) 30%,
+                                                    rgba(0, 0, 0, 0));
+                        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                        border-radius: 15px;
+
+                        white-space: normal;
+                    }
+
+                    .playChordButton{
+                        position: absolute;
+                        width: 75px;
+                        height: 50px;
+                        left: 1514px;
+                        top: 775px;
+                        font-size: 16px;
+                        background-color: Orange;
+                        border: 0;
+                        background-image: linear-gradient(to top left,
+                                                    rgba(0, 0, 0, .1),
+                                                    rgba(0, 0, 0, .1) 30%,
+                                                    rgba(0, 0, 0, 0));
+                        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                        border-radius: 15px;
+                    }
+		    
+		            .assistOn{
+                        position: absolute;
+                        width: 75px;
+                        height: 61px;
+                        left: 1514px;
+                        top: 835px;
+                        font-size: 16px;
+                        background-color: Orange;
+                        border: 0;
+                        background-image: linear-gradient(to top left,
+                                                    rgba(0, 0, 0, .1),
+                                                    rgba(0, 0, 0, .1) 30%,
+                                                    rgba(0, 0, 0, 0));
+                        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                                    inset -2px -2px 3px rgba(0, 0, 0, .6);
+                        border-radius: 15px;
+                    }
+
+                    form.dots{
+                            position: absolute;
+                            left: 100px;
+                            top: 700px;
+                    }
+
+                    input[type=text] {
+                        -webkit-transition: width 0.4s ease-in-out;
+                        transition: width 0.4s ease-in-out;
+                    }
+
+                    input[type=text]:focus {
+                        width: 100%;
+                    }
+            
+                    .container {
+                        display: block;
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 12px;
+                        cursor: pointer;
+                        font-size: 22px;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+
+
+                    .container input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+
+
+                    .checkmark {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 25px;
+                        width: 25px;
+                        background-color: #eee;
+                        border-radius: 50%;
+                    }
+
+
+                    .container:hover input ~ .checkmark {
+                        background-color: #ccc;
+                    }
+
+
+                    .container input:checked ~ .checkmark {
+                        background-color: 	#FFA500;
+                    }
+
+
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+
+
+                    .container input:checked ~ .checkmark:after {
+                        display: block;
+                    }
+
+
+                    .container .checkmark:after {
+                            top: 9px;
+                            left: 9px;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: white;
+                    }
+
+                    input[type=number], select, textarea {
+                        width: 7%;
+                        padding: 12px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        resize: vertical;
+                    }
+
+                    input[type="number"]::-webkit-outer-spin-button,
+                    input[type="number"]::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                    input[type="number"] {
+                        -moz-appearance: textfield;
+                    }
+            </style>
+
+            </div>
+        </center>
+
+    <!--files with web audio functions-->
+        <script type="text/javascript" src="loader.js"></script>
+        <script type="text/javascript" src="play.js"></script>
+
+            <p id="demos"></p>
+    </body>
+</html>
+    <!--end of web audio-->
